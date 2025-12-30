@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pickleball rezervacija</title>
-
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <h1>Pickleball aikštelės rezervacija</h1>
   <p>1 aikštelė</p>
 
   <button id="reserveBtn">Rezervuoti</button>
 
+  <div id="form" style="display:none; margin-top:20px;">
+    <label>Data:</label><br />
+    <input type="date" id="date" /><br /><br />
+
+    <label>Nuo:</label><br />
+    <input type="time" id="from" /><br /><br />
+
+    <label>Iki:</label><br />
+    <input type="time" id="to" /><br /><br />
+
+    <button id="save">Išsaugoti rezervaciją</button>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>
-
